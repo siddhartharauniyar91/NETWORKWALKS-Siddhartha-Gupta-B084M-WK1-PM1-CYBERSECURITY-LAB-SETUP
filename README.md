@@ -28,7 +28,9 @@ This project focuses on configuring an isolated virtual cybersecurity laboratory
 ### Step 1: Custom Virtual Network Configuration
 Configured the custom virtual network with the `10.0.0.0/24` prefix and designated DHCP pool range.
 
-![Network Configuration](images/01-network-configuration.png)
+![Network Configuration]
+<img width="704" height="513" alt="02-vm-adapter-settings" src="https://github.com/user-attachments/assets/0c4c9720-58bb-4bd5-a35c-655407f9dd39" />
+<img width="905" height="659" alt="01-network-configuration" src="https://github.com/user-attachments/assets/8f3bc4c9-b19d-45d6-8182-b654f3cc989b" />
 
 ---
 
@@ -36,6 +38,8 @@ Configured the custom virtual network with the `10.0.0.0/24` prefix and designat
 Attached the Kali Linux virtual machine interface to the Shared Network using the `virtio-net-pci` network adapter.
 
 ![VM Adapter Settings](images/02-vm-adapter-settings.png)
+![Uploading 02-vm-adapter-settings.png…]()
+
 
 ---
 
@@ -43,6 +47,8 @@ Attached the Kali Linux virtual machine interface to the Shared Network using th
 Enabled bidirectional clipboard sharing and configured a shared directory (`KALI-SHARED`) between the host system and the guest OS.
 
 ![VM Sharing Settings](images/03-vm-sharing-settings.png)
+<img width="905" height="659" alt="03-vm-sharing-settings" src="https://github.com/user-attachments/assets/00c1bb51-08f7-49d1-9dfc-993a78d7d068" />
+
 
 ---
 
@@ -54,6 +60,8 @@ Configured manual IPv4 settings inside Kali Linux:
 * **DNS Server:** `8.8.8.8`
 
 ![Kali Static IP Configuration](images/04-kali-static-ip-gui.png)
+<img width="1470" height="956" alt="04-kali-static-ip-gui" src="https://github.com/user-attachments/assets/ae964525-e2e8-4065-b5ea-f16304c557d5" />
+
 
 ---
 
@@ -61,6 +69,8 @@ Configured manual IPv4 settings inside Kali Linux:
 Verified interface assignment and external internet access through HTTP/2 headers via `curl`:
 
 ![Terminal IP & Internet Proof](images/05-terminal-ip-and-ping-proof.png)
+<img width="1470" height="956" alt="05-terminal-ip-and-ping-proof" src="https://github.com/user-attachments/assets/573e7dd4-a5db-4602-b2e4-8c1d40556ea4" />
+
 
 ---
 
@@ -68,6 +78,8 @@ Verified interface assignment and external internet access through HTTP/2 header
 Created a clean baseline clone (`Linux Clone`) before conducting security testing tasks to allow quick recovery.
 
 ![VM Clone / Snapshot](images/06-vm-snapshot.png)
+<img width="896" height="657" alt="06-vm-snapshot" src="https://github.com/user-attachments/assets/1aed36db-f004-4383-a21f-89cc1a5db2e9" />
+
 
 ---
 
